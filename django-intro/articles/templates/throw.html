@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <form action="/catch/" method="GET">
+    <label for="search">search</label>
+    <input type="text" name="search" id="search">
+    <input type="submit">
+  </form>
+  {% comment %}
+  <form action="https://search.naver.com/search.naver?">
+    <label for="keyword">keyword</label>
+    <input type="text" name="query" id="keyword">
+    <input type="submit">
+  </form>
+  {% endcomment %}
+{% endblock content %}
