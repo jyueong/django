@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>Throw</h1>
+<form action="{% url 'catch' %}" method="GET">
+  <label for="search">Throw</label>
+  <input type="text" id="search" name="search">
+  <input type="submit">
+</form>
+<form action="https://search.naver.com/search.naver?">
+  <label for="naver">Naver</label>
+  <input type="text" id="naver" name="query">
+  <input type="submit">
+</form>
+{% endblock content %}

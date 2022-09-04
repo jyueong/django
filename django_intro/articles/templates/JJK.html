@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ name }}에 관한 정보입니다.</h1>
+<p>나이: {{ age }}세</p>
+<p>솔로곡: {{ solo.0 }}, {{ solo.1 }}</p>
+<p>참여앨범: {{ album|truncatewords:3 }}</p>
+<a href="{% url 'throw' %}">던지러 가보자고</a>
+{% endblock content %}
