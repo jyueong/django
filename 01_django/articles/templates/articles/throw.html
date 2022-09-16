@@ -2,7 +2,7 @@
 
 {% block content %}
   <h1>Throw</h1>
-  <form action="{% url 'catch' %}" method="GET">
+  <form action="/articles/throw/" method="POST">
     <label for="message">Throw</label>
     <input type="text" name="message" id="message">
     <input type="submit">
